@@ -1,0 +1,109 @@
+.header{
+    display: grid;
+    background: #e0e0e0;
+    border-bottom: solid 1px #d30bd3;
+    box-shadow: 3px 3px 3px #99bdff;
+    grid-template-columns: 10% 33% 33%;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    // margin-bottom: 5px;
+
+    .title-group{
+
+        .a{
+            margin-right: 10px;
+            color: #000000c4;
+            font-size: 17px;
+            filter: drop-shadow(6px 8px 4px rgba(0, 0, 0, 0.5));
+        }
+        
+    }
+
+    .logo{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    img#ts{
+        width: 56px;
+        margin-top: 10px;
+        margin-bottom: auto;
+        margin-right: -5px;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+    #ts:hover{
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+        filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    }
+
+    img#html{
+        width: 70px;
+        margin-top: 24px;
+        margin-left: -10px;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+    #html:hover{
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+        filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    }
+
+    img#angular{
+        width: 75px;
+        margin-left: -24px;
+        margin-bottom: auto;
+        margin-top: 3px;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+    #angular:hover{
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+        filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    }
+
+    img#css{
+        width: 70px;
+        margin-left: -24px;
+        margin-top: auto;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+    #css:hover{
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+        filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    }
+
+    img#js{
+        width: 90px;
+        margin-left: -31px;
+        margin-bottom: auto;
+        margin-top: -1px;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+    #js:hover{
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+        filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    }
+
+
+}
