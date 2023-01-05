@@ -1,44 +1,114 @@
+
 <div class="container">
-    <app-sidenav></app-sidenav>
     <div class="apresentação">
+        <!-- <div class="header"><app-header></app-header></div> -->
+        <!-- <div class="header">
+            <div class="logo">viniciusNunes</div>
+      <a href="#">
+        <i class="fas fa-bars navigation-icon"></i>
+      </a>
+      <nav>
+        <ul class="menu">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#sobre-mim">Sobre mim</a>
+          </li>
+
+          <li>
+            <a href="#projetos">Projetos</a>
+          </li>
+          <li>
+            <a href="#contato">Contato</a>
+          </li>
+        </ul>
+      </nav>
+        </div> -->
+
         <div class="apresentação__title">
-            <h3 class="apresentação__text">Olá, eu sou
+            
+            <h3 class="apresentação__text">Olá, Meu nome é
                 <h1 class="apresentação__text_h1">Daniel Almeida.<a class="apresentação__text_a">|</a> </h1>
-            Desenvolvedor Web Front-end</h3>
+            e sou Desenvolvedor Web Front-end</h3>
         </div>
         <div class="apresentação__img">
             <img class="avatar" src="assets/avatar1.png">
         </div>
     </div>
-    <mat-card class="card">
-        <mat-card-title calss="card__title">
-            Sobre mim
-        </mat-card-title>
-        <mat-card-content calss="card__conteudo">
-        <p>
-            Tenho 25 anos de idade, moro na capital do estado de São Paulo - Brasil.<br><br>
-            
-            Sou Responsável pelo desenvolvimento de páginas Web com funcionalidades e ferramentas voltadas às necessidades do negócio. Com conhecimentos e habilidades em:<br>
-            - HTML5<br>
-            - SCSS<br>
-            - JavaScript<br>
-            - TypeScript<br>
-            - Angular 8<br>
-            - Metodologia Ágil: SCRUM <br>
-            - Integração com API-Rest <br>
-        </p>
-        <p>
-            Em 2020 recebi a oportunidade de um primo meu, para conhecer um pouco mais sobre o universo do desenvolvimento web e aqui estou, apaixonado empenhado no meu aprimoramento nesta área que está me proporcionando conhecimento e habilidades inigualáveis.💻✨
-            <br><br>
-            Logo após dar inicio aos meus estudos como em angular, recebi outra oportunidade que foi para atuar como programador voluntario num projeto incrível para um centro de acolhimento de idosos. Onde junto com uma equipe de desenvolvedores sênior e plenos, desenvolvemos um sistema interno.
-            <br><br>
-            Hoje me dedico constantemente para a minha evolução e domínio, estudando diariamente e buscando cada vez mais meu desenvolvimento na área!
-            <br><br>
-            Atualmente estou cursando Análise e desenvolvimento de sistema pela universidade Anhembi Morumbi.
-        </p>
-        </mat-card-content>
-    </mat-card>
-    <div class="projetos">
+    <div class="sobre-mim" id="sobre-mim">
+
+        <div class="tittle">
+            <h2 class="section__tittle">Sobre Mim</h2>
+        </div>
+
+        <div class="description_skills">
+            <div class="description">
+                <h3 class="description__tittle">Quem sou?</h3>
+                <p class="description__text">
+                    De São Paulo - SP e tenho 25 anos, estou no inicio da minha carreira como desenvolvedor, e em breve estarei me formando em Análise e Desenvolvimento de Sistemas pela Universidade Anhembi Morumbi. Sou apaixonado por tecnologia e games mas principalmente por desenvolvimento web. Fui voluntario por 2 anos como Desenvolvedor Front-End, em um projeto para um centro de acolhimento de idosos; Onde fui responsavel pela criações de telas respansivas e funcionais do projeto. Atualmente estou estudando as principais tecnologias e linguagens de programação Back-End, para futuramente me tornar Full-Stack. 
+                </p>
+            </div>
+
+            <div class="skills">
+                <h3 class="skills__tittle">Skills:</h3>
+                <ul class="skills__container">
+                    <li class="skills__icon">
+                    <mat-icon class="fa-html5">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/>
+                        </svg>
+                    </mat-icon>
+                    <span>HTML</span>
+                    </li>
+                    <li class="skills__icon">
+                    <mat-icon class="fa-css3">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"/>
+                        </svg>
+                    </mat-icon>
+                    <span>CSS</span>
+                    </li>
+                    <li class="skills__icon">
+                    <mat-icon class="fa-js">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"/>
+                        </svg>
+                    </mat-icon>
+                    <span>JavaScript</span>
+                    </li>
+                    <li class="skills__icon">
+                    <mat-icon class="fa-ts">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                            <path d="M0 16v16h32v-32h-32zM25.786 14.724c0.813 0.203 1.432 0.568 2.005 1.156 0.292 0.312 0.729 0.885 0.766 1.026 0.010 0.042-1.38 0.974-2.224 1.495-0.031 0.021-0.156-0.109-0.292-0.313-0.411-0.599-0.844-0.859-1.505-0.906-0.969-0.063-1.594 0.443-1.589 1.292-0.005 0.208 0.042 0.417 0.135 0.599 0.214 0.443 0.615 0.708 1.854 1.245 2.292 0.984 3.271 1.635 3.88 2.557 0.682 1.031 0.833 2.677 0.375 3.906-0.51 1.328-1.771 2.234-3.542 2.531-0.547 0.099-1.849 0.083-2.438-0.026-1.286-0.229-2.505-0.865-3.255-1.698-0.297-0.323-0.87-1.172-0.833-1.229 0.016-0.021 0.146-0.104 0.292-0.188s0.682-0.396 1.188-0.688l0.922-0.536 0.193 0.286c0.271 0.411 0.859 0.974 1.214 1.161 1.021 0.542 2.422 0.464 3.115-0.156 0.281-0.234 0.438-0.594 0.417-0.958 0-0.37-0.047-0.536-0.24-0.813-0.25-0.354-0.755-0.656-2.198-1.281-1.651-0.714-2.365-1.151-3.010-1.854-0.406-0.464-0.708-1.010-0.88-1.599-0.12-0.453-0.151-1.589-0.057-2.042 0.339-1.599 1.547-2.708 3.281-3.036 0.563-0.109 1.875-0.068 2.427 0.068zM18.276 16.063l0.010 1.307h-4.167v11.839h-2.948v-11.839h-4.161v-1.281c0-0.714 0.016-1.307 0.036-1.323 0.016-0.021 2.547-0.031 5.62-0.026l5.594 0.016z"/>
+                        </svg>
+                    </mat-icon>
+                    <span>TypeScript</span>
+                    </li>
+                    <li class="skills__icon">
+                    <mat-icon class="fa-github">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"> 
+                            <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                        </svg>
+                    </mat-icon>
+                    <span>GITHUB</span>
+                    </li>
+                    <li class="skills__icon">
+                    <mat-icon class="fa-angular">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path d="M185.7 268.1h76.2l-38.1-91.6-38.1 91.6zM223.8 32L16 106.4l31.8 275.7 176 97.9 176-97.9 31.8-275.7zM354 373.8h-48.6l-26.2-65.4H168.6l-26.2 65.4H93.7L223.8 81.5z"/>
+                        </svg>
+                    </mat-icon>
+                    <span>ANGULAR</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</div>      
+    <!-- <div class="projetos">
         <h1>Projetos</h1>
         <mat-card class="projetos__card">
             <mat-card-title>
@@ -59,5 +129,4 @@
                 <video></video>
             </mat-card-content>
         </mat-card>
-    </div>
-</div>
+    </div> -->
