@@ -4,15 +4,11 @@
   background: #ffffff00;
   width: 100%;
   height: auto;
-  display: grid;
-  grid-template-areas:
-      'banner banner'
-      'sobre sobre'
-      'projeto projeto'
-      'contato contato';
-  grid-template-rows: auto 1fr;
-  grid-template-columns: 1fr 1fr;
-
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  flex-direction: column;
+  /*-----------------------------------------------------Banner------------------------------------------------------------*/
   .apresentação{
     grid-area:banner;
     display: grid;
@@ -115,43 +111,39 @@
 
     }
   }
+
+   /*-----------------------------------------------------Sobre-min------------------------------------------------------------*/
+
   .sobre-mim {
-    color:aliceblue;
+    color: aliceblue;
+    display: contents;
     width: auto;
     min-width: 350px;
     max-width: 1200px;
     border: red 2px solid;
-    align-content: center;
     margin-left: 10%;
     margin-right: 10%;
-    flex-direction: column;
-    align-items: center;
-    grid-area: sobre;
     
     .tittle{
-      display: flex;
-      align-content: center;
-      justify-content: center;
-      align-items: center;
-      font-family:'Ubuntu-Bold';
+      display: contents;
+      font-family: "Ubuntu-Bold";
       font-weight: bold;
       width: auto;
       min-width: 350px;
       height: 300px;
-      min-height: 350px;
-      // border: darkviolet 2px solid;
+      min-height: 250px;
       margin-top: 5px;
       margin-bottom: -15px;
-      flex-direction: row;
     }
     .section__tittle {
       width: auto;
       height: auto;
       min-width: 350px;
-      min-height: 350px;
-      font-size: 220px;
+      min-height: 250px;
+      font-size: 200px;
       text-align: center;
-      // border: darkolivegreen 2px solid;
+      margin-top: 25px;
+      margin-bottom: 25px;
       background: linear-gradient(#444, #000);
       background-clip: text;
       -webkit-background-clip: text;
@@ -169,7 +161,9 @@
       grid-template-columns: 1fr 1fr;
       gap: 15px;
       margin-top: 13px;
-      padding: 0px;
+      padding: 20px;
+      margin-left: 25px;
+      margin-right: 25px;
       // border: darksalmon solid 2px;
     }
     .description{
@@ -194,9 +188,9 @@
       }
 
       .description__text {
-        font-family: 'Ubuntu-Bold';
-        font-size: 24px;
-        font-weight: bold;
+        font-family: "Ubuntu-Light";
+        font-size: 23px;
+        font-weight: 300;
         width: auto;
         min-width: 350px;
         line-height: 150%;
@@ -287,38 +281,140 @@
 
   }
 
+  /*-----------------------------------------------------Projetos------------------------------------------------------------*/
 
-  .projetos{
-    flex-direction: column;
-    grid-column-start: 2;
-    grid-row: 3;
-    margin-left: 50px;
-    border-top: solid 1px rgba(255, 255, 255, 0.541);
+  .projetos {
+    color: aliceblue;
+    display: contents;
+    width: auto;
+    min-width: 350px;
+    max-width: 1200px;
+    margin-left: 10%;
+    margin-right: 10%;
 
-    .projetos__card{
-      margin-bottom: 10px;
-      width: 800px;
-      height: auto;
-      align-items: center;
+    .tittle{
+      display: flex;
+      align-content: center;
       justify-content: center;
-      border-top: red solid;
-      border-bottom: red solid;
-      border-radius: 10px;
-      .card__video{
-        width: 500px;
-      }
-      .card__img{
-        width: 600px;
-        transition: all 0.5s;
-        margin-left: 25px;
-      }
-      .card__img:hover{
-        -webkit-transform: scale(1.5);
-        transform: scale(1.5);
-        -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-        filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-      }
+      align-items: center;
+      font-family: "Ubuntu-Bold";
+      font-weight: bold;
+      width: auto;
+      min-width: 350px;
+      height: 300px;
+      min-height: 250px;
+      margin-top: 5px;
+      margin-bottom: -15px;
+      flex-direction: row;
     }
+    .section__tittle {
+      margin-top: 150px;
+      width: auto;
+      height: auto;
+      min-width: 350px;
+      min-height: 250px;
+      font-size: 200px;
+      text-align: center;
+      background: linear-gradient(#444, #000);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .card-container {
+      width: auto;
+      min-width: 350px;
+      height: auto;
+      min-height: 350px;
+      margin-top: 80px;
+      display: flex;
+      flex-wrap: wrap;
+      grid-gap: 30px;
+      gap: 70px;
+      margin-top: 13px;
+      align-items: center;
+      align-content: center;
+    }
+
+    .card_Posion{
+      display: flex;
+      height: auto;
+      min-height: 350px;
+      width: auto;
+      min-width: 350px;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-direction: row;
+      justify-content: center;
+      padding: 20px;
+      margin-top: 13px;
+      margin-left: 25px;
+      margin-right: 25px;
+      gap: 60px;
+    }
+    
+    .card {
+      position: relative;
+      background: rgb(255 255 255 / 10%);
+      display: flex;
+      width: 339px;
+      height: 175px;
+      overflow: hidden;
+      margin-bottom: 5px;
+      margin-top: 5px;
+      align-content: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    
+    .card::before {
+      position: absolute;
+      background-color: #0009;
+      color: aliceblue;
+      font-weight: 500;
+      content: 'Clique aqui para abrir o projeto';
+      width: 100%;
+      height: 100%;
+      display: grid;
+      place-content: center;
+      transform: translateY(100%);
+      transition: transform 0.6s;
+    }
+    
+    .card:hover::before {
+      transform: translateY(0%);
+    }
+
+    .card img{
+      width: 375px;
+      height: 208px;
+      margin-top: -16px;
+    }
+
+    .ordem{
+      display: flex;
+      width: auto;
+      height: auto;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .tittle_card{
+      font-family: 'Ubuntu-Light';
+      font-weight: 500;
+      color:  #ebebeb;
+      margin-bottom: 0px;
+      transition: all 0.5s;
+      cursor:default;
+    }
+    .tittle_card:hover{
+      -webkit-transform: scale(1.5);
+      transform: scale(1.5);
+    }
+    
   }
+  
 }
 
