@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './Pages/home/home.component';
 import { HeaderComponent } from './Shared/header/header.component';
-import { SidenavComponent } from './Shared/sidenav/sidenav.component';
 import { MaterialModule } from './material.module';
 
 @NgModule({
@@ -14,7 +13,6 @@ import { MaterialModule } from './material.module';
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    SidenavComponent,
   ],
   imports: [
     BrowserModule,
