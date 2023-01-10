@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
+  public icon: string  = 'moon ';
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toggleTheme(){
+   
+    const theme =  document.body.classList.toggle('dark-theme');
+    if(theme){
+       return (this.icon = 'sun');
+    } 
+       return (this.icon = 'moon');
   }
 
 }

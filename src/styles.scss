@@ -1,12 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+// html, body { height: 100%; }
 body { 
-    margin: 0; 
-    font-family: Roboto, "Helvetica Neue", sans-serif; 
-    background-color: black;
+    // margin: 0; 
+    // font-family: Roboto, "Helvetica Neue", sans-serif; 
+    background-color: var(--body);
     // background-image: linear-gradient(46deg, #b0b0b0ad, #ddddddd1, #d3d1d1c9);
 }
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    font-family: Roboto, Arial, "Helvetica Neue", sans-serif;
+    button{
+        background: none;
+        cursor: ponteir
+    }
+}
+:root{
+    --primary: darkslategray ;
+    --body: #fff;
+    --text-menu: #fff;
+    --text-body: #000000;
+    --color: #054839;
+    color: black;
+}
+
+:root .dark-theme{
+    --primary:  rgba(255, 0, 43, 0.877);
+    --body: black;
+    --text-menu: #fff;
+    --text-body: #fff;
+    --color:  rgba(255, 0, 43, 0.877);
+    color:white;
+}
+
+span, .mudarCor{
+    color: var(--text-body);
+}
+
+.skills__icon{
+    background-color: var(--primary);
+}
+
+.skills__tittle, .description__tittle{
+    color: var(--color);
+}
+
+
 @font-face {
     font-family: Ubuntu-Bold;
     src: url(./assets/fonts/Ubuntu/Ubuntu-Bold.ttf);
